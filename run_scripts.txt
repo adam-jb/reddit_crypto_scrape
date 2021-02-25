@@ -1,0 +1,5 @@
+python3 $(PWD)/scripts/run_reddit_crypto_dump.py $(PWD)/
+Rscript $(PWD)/scripts/get_reddit_eachstock.R 10 $(PWD)/raw_data/crypto_names.csv $(PWD)/raw_data/crypto_reddit.csv
+python3$(PWD)/scripts/save_today_info.py $(PWD)/raw_data/crypto_reddit.csv
+python3 $(PWD)/dashboard.py
+
