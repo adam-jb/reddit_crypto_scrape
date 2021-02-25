@@ -1,12 +1,11 @@
 
+# Append today's data to existing dataframe (storing all trends into a single df)
+# Remove old data, so only keeping last 30 days of trends 
 
 import pandas as pd
-#import rpy2.robjects as robjects
-#from rpy2.robjects import pandas2ri
 from datetime import date, timedelta, datetime
 import sys
 import os
-#sys.path.append("/Users/apple/Desktop/dash/doge_plus/scripts")  # setwd to load my scripts
 
 
 main_path = os.path.dirname(os.path.abspath(__file__)) + '/'
