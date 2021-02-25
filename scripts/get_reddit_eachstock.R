@@ -1,3 +1,9 @@
+
+# Code to loop through 300 cryptocurrencies and search WallStreetBets for comments containing their codes
+# Filters for posts in last 2 days
+# Performs seniment analysis for each currency, saving the results as a row in a dataframe 
+# Script outputs a dataframe with 1 row for each currency 
+
 library(RedditExtractoR)
 library(syuzhet)
 library(tidyverse)
@@ -105,9 +111,6 @@ for (i in 1:length(cryptos)) {
 
 
 
-
-# "/Users/apple/Desktop/dash/doge_plus/raw_data/crypto_names.csv"
-# "/Users/apple/Desktop/dash/doge_plus/raw_data/crypto_reddit.csv"
 
 
 
